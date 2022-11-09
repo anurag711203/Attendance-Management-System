@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap source file -->
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://kit.fontawesome.com/05163a050a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!--js for bootstrap -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Serif+Pro:ital,wght@0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="log.js"></script>
+    <!-- *********** -->
+    <title>Login</title>
+  </head>
+  <body>
+    <img class="bg-img" src="../images/bg.png" alt="Background Image" />
+    <!-- <img class="bg" src="logIn_Background.jpg" alt="" /> -->
+    <div class="logcard">
+      <div class="top-bar">
+        <a class="home-link" href="index.html">
+          <h1 class="heading">
+            <img src="/images/logo.jpg" alt="logo" width="12%" height="8%">
+            <h3>AtManager</h3>
+          </h1>
+        </a>
+      </div>
+
+      <div class="form">
+        <form action="">
+          <input
+            class="userpass entry"
+            id="username"
+            type="text"
+            placeholder="Email"
+          />
+          <br />
+          <input
+            class="userpass entry"
+            type="password"
+            id="password"
+            placeholder="Password"
+          />
+          <br />
+          <button type="submit" class="log-btn" value="login" onclick="getInfo()">Log In</button>
+        </form>
+      </div>
+
+      <div class="bottom_check">
+        <div class="rem-check">
+          <input
+            type="checkbox"
+            name="Remember"
+            class="remember"
+            checked="checked"
+            id="remember"
+          />
+          <label for="Remember">Remember me</label>
+        </div>
+
+        <a href="#" class="forgotpass" id="forgotpass">Forgot Password</a>
+      </div>
+      <p class="option">Or Log in with</p>
+
+      <div class="socialmedia">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+      </div>
+      <!-- area for new user -->
+    </div>
+  </body>
+</html>

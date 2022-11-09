@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="take.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <title>Take attendance</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+              <img src="images\logo.jpg">
+              <span class="nav-item">Attendance<br>manager</span>
+            </a></li>
+            <li><a href="index.html">
+              <i class="fas fa-chart-area"></i>
+              <span class="nav-item">Score Board</span>
+            </a></li>
+            <li><a href="take.html">
+              <i class="fas fa-notes-medical"></i>
+              <span class="nav-item">Get Attendance</span>
+            </a></li>
+            <li><a href="Show.html">
+              <i class="fas fa-print"></i>
+              <span class="nav-item">Attendance</span>
+            </a></li>
+            <li><a href="student.html">
+              <i class="fas fa-plus"></i>
+              <span class="nav-item">Student</span>
+            </a></li>
+    
+            <li><a href="login.html" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a></li>
+          </ul>
+        </nav>
+     <!--Attendance manager page here-->
+     <div>
+        <header class="take-heading"><h1>Attendance manger</h1></header>
+        <div class="selection">
+            <form>
+                <div class="form-control">
+                    <label for="role" id="label-role">
+                        Grade
+                    </label>
+                     
+                    <!-- Dropdown options -->
+                    <select name="role" id="role" >
+                        <option value="1">Grade 1</option>
+                        <option value="2">Grade 2</option>
+                        <option value="3">Grade 3</option>
+                        <option value="4">Grade 4</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="date" id="date">
+                        Date
+                    </label>
+                    <input type="date">
+                </div>
+                <button type="submit" value="search">Search</button>
+            </form>
+
+            <section class="attendance">
+                <div class="attendance-list">
+                  <h1>Attendance List</h1>
+                  <form class="take">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Date</th>
+                        <th>present</th>
+                        <th>absent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Anurag</td>
+                          <td>1</td>
+                          <td>1/1/2020</td>
+                          <td><label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-1"
+                                   name="01" value="P"></input>
+                        </label></td>
+                          <td><label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-1"
+                                   name="01" value="A"></input>
+                        </label></td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td>Sanskriti</td>
+                          <td>1</td>
+                          <td>1/1/2020</td><td><label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-2"
+                                   name="02" value="P"></input>
+                        </label></td>
+                          <td><label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-1"
+                                   name="02" value="A"></input>
+                        </label></td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                          <td>priya</td>
+                          <td>1</td>
+                          <td>1/1/2020</td><td><label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-1"
+                                   name="03" value="P"></input>
+                        </label></td>
+                          <td><label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-1"
+                                   name="03" value="A"></input>
+                        </label></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="submit" name="submit">submit</button></td>
+                          </tr>
+
+                      </tbody>
+                    </table>
+                </form>
+        </div>
+
+</body>
+</html>

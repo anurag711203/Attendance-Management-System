@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="student.css" />
+    <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+              <img src="images\logo.jpg">
+              <span class="nav-item">Attendance<br>manager</span>
+            </a></li>
+            <li><a href="index.html">
+              <i class="fas fa-chart-area"></i>
+              <span class="nav-item">Score Board</span>
+            </a></li>
+            <li><a href="take.html">
+              <i class="fas fa-notes-medical"></i>
+              <span class="nav-item">Get Attendance</span>
+            </a></li>
+            <li><a href="Show.html">
+              <i class="fas fa-print"></i>
+              <span class="nav-item">Attendance</span>
+            </a></li>
+            <li><a href="student.html">
+              <i class="fas fa-plus"></i>
+              <span class="nav-item">Student</span>
+            </a></li>
+    
+            <li><a href="login.html" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a></li>
+          </ul>
+        </nav>
+
+        <section class="main">
+            <h1>Add New student</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Grade
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role" >
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Gender
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed" value="M">Male</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed" value="F">Female</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed" value="O">Others</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>Cources Opted for
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Operating System</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">DataBase Management System</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Design Of Algorithm</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Power System</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Probability Theory</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Embedded System</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Machine Learning</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Artificial Engineering</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">IOT</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Cloud Computing</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Other Qualifications
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Tell us about you">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+        </section>
+</body>
+</html>
